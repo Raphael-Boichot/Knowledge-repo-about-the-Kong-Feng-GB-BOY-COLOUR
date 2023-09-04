@@ -30,8 +30,8 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
 The global rom organisation is the following (by increasing offset):
-- Rom name: HITEK_MULTI      | Size in bytes: 0x400000 | Starting offset: 0x000000
-- Rom name: SUPER MARIOLAND  | Size in bytes: 0x010000 | Starting offset: 0x400000
+Rom name: HITEK_MULTI      | Size in bytes: 0x400000 | Starting offset: 0x000000
+Rom name: SUPER MARIOLAND  | Size in bytes: 0x010000 | Starting offset: 0x400000
 - Rom name: BUGS BUNNY       - Size in bytes: 0x010000 - Starting offset: 0x410000
 - Rom name: PARASORU HEMBEI  - Size in bytes: 0x010000 - Starting offset: 0x420000
 - Rom name: GO GO TANK       - Size in bytes: 0x010000 - Starting offset: 0x430000
