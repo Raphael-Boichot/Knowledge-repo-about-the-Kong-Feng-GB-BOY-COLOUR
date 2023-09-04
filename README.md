@@ -42,7 +42,7 @@ The global rom organisation is the following (by increasing offset):
 - Rom name: PAC-MAN          Size in bytes: 0x010000 - Starting offset: 0x4C0000
 - Rom name: SIDE POCKET      Size in bytes: 0x010000 - Starting offset: 0x4D0000
 - Rom name: KID NIKI         Size in bytes: 0x010000 - Starting offset: 0x4E0000
-- Rom name: YARSREVENGEAYVE Size in bytes: 0x010000 - Starting offset: 0x4F0000
+- Rom name: YARSREVENGEAYVE  Size in bytes: 0x010000 - Starting offset: 0x4F0000
 - Rom name: YAKUMAN          Size in bytes: 0x008000 - Starting offset: 0x500000
 - Rom name: BUBBLE GHOST     Size in bytes: 0x008000 - Starting offset: 0x508000
 - Rom name: MIGRAIN ACCLAIM  Size in bytes: 0x008000 - Starting offset: 0x510000
