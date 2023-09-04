@@ -33,73 +33,73 @@ The global rom organisation is the following (by increasing offset):
 
 | Rom name:                  | Size in bytes:          |Starting offset:             |
 |----------------------------|-------------------------|-----------------------------|
-| HITEK_MULTI      | 0x400000 | 0x000000   |
-| Rom name: SUPER MARIOLAND  | Size in bytes: 0x010000 | Starting offset: 0x400000   |
-| Rom name: BUGS BUNNY       | Size in bytes: 0x010000 | Starting offset: 0x410000   |
-| Rom name: PARASORU HEMBEI  | Size in bytes: 0x010000 | Starting offset: 0x420000   |
-| Rom name: GO GO TANK       | Size in bytes: 0x010000 | Starting offset: 0x430000   |
-| Rom name: ALADDIN          | Size in bytes: 0x040000 | Starting offset: 0x440000   |
-| Rom name: CONTRA           | Size in bytes: 0x020000 | Starting offset: 0x480000   |
-| Rom name: MARIO & YOSHI    | Size in bytes: 0x010000 | Starting offset: 0x4A0000   |
-| Rom name: DUCK TALES       | Size in bytes: 0x010000 | Starting offset: 0x4B0000   |
-| Rom name: PAC-MAN          | Size in bytes: 0x010000 | Starting offset: 0x4C0000   |
-| Rom name: SIDE POCKET      | Size in bytes: 0x010000 | Starting offset: 0x4D0000   |
-| Rom name: KID NIKI         | Size in bytes: 0x010000 | Starting offset: 0x4E0000   |
-| Rom name: YARSREVENGEAYVE  | Size in bytes: 0x010000 | Starting offset: 0x4F0000   |
-| Rom name: YAKUMAN          | Size in bytes: 0x008000 | Starting offset: 0x500000   |
-| Rom name: BUBBLE GHOST     | Size in bytes: 0x008000 | Starting offset: 0x508000   |
-| Rom name: MIGRAIN ACCLAIM  | Size in bytes: 0x008000 | Starting offset: 0x510000   |
-| Rom name: OTHELLO          | Size in bytes: 0x008000 | Starting offset: 0x518000   |
-| Rom name: HONG KONG        | Size in bytes: 0x008000 | Starting offset: 0x520000   |
-| Rom name: KORODICE         | Size in bytes: 0x008000 | Starting offset: 0x528000   |
-| Rom name: MASTER KARATEKA  | Size in bytes: 0x008000 | Starting offset: 0x530000   |
-| Rom name: SHISENSYO        | Size in bytes: 0x008000 | Starting offset: 0x538000   |
-| Rom name: SHANGHAI         | Size in bytes: 0x008000 | Starting offset: 0x540000   |
-| Rom name: TENNIS           | Size in bytes: 0x008000 | Starting offset: 0x548000   |
-| Rom name: TRUMP BOY        | Size in bytes: 0x008000 | Starting offset: 0x550000   |
-| Rom name: VOLLEY FIRE      | Size in bytes: 0x008000 | Starting offset: 0x558000   |
-| Rom name: ALLEY WAY        | Size in bytes: 0x008000 | Starting offset: 0x560000   |
-| Rom name: PITMAN           | Size in bytes: 0x008000 | Starting offset: 0x568000   |
-| Rom name: SPACE INVADERS   | Size in bytes: 0x008000 | Starting offset: 0x570000   |
-| Rom name: ASTEROIDS        | Size in bytes: 0x008000 | Starting offset: 0x578000   |
-| Rom name: BATTLECITY       | Size in bytes: 0x008000 | Starting offset: 0x580000   |
-| Rom name: BOMB JACK        | Size in bytes: 0x008000 | Starting offset: 0x588000   |
-| Rom name: BOXXLE           | Size in bytes: 0x008000 | Starting offset: 0x590000   |
-| Rom name: BOXXLE2          | Size in bytes: 0x008000 | Starting offset: 0x598000   |
-| Rom name: AMIDA            | Size in bytes: 0x008000 | Starting offset: 0x5A0000   |
-| Rom name: TETRIS           | Size in bytes: 0x008000 | Starting offset: 0x5A8000   |
-| Rom name: BRAINBENDER      | Size in bytes: 0x008000 | Starting offset: 0x5B0000   |
-| Rom name: TIC-TAC-TOE      | Size in bytes: 0x008000 | Starting offset: 0x5B8000   |
-| Rom name: CASTELIAN        | Size in bytes: 0x008000 | Starting offset: 0x5C0000   |
-| Rom name: CENTIPEDE        | Size in bytes: 0x008000 | Starting offset: 0x5C8000   |
-| Rom name: CRYSTAL QUEST    | Size in bytes: 0x008000 | Starting offset: 0x5D0000   |
-| Rom name: DRAGON SLAYER 1  | Size in bytes: 0x008000 | Starting offset: 0x5D8000   |
-| Rom name: DROPZONE         | Size in bytes: 0x008000 | Starting offset: 0x5E0000   |
-| Rom name: DR.MARIO         | Size in bytes: 0x008000 | Starting offset: 0x5E8000   |
-| Rom name: FLAPPY SPECIAL   | Size in bytes: 0x008000 | Starting offset: 0x5F0000   |
-| Rom name: FLIPULL          | Size in bytes: 0x008000 | Starting offset: 0x5F8000   |
-| Rom name: HEIANKYO ALIEN   | Size in bytes: 0x008000 | Starting offset: 0x600000   |
-| Rom name: HYPERLODERUNNER  | Size in bytes: 0x008000 | Starting offset: 0x608000   |
-| Rom name: KLAX             | Size in bytes: 0x008000 | Starting offset: 0x610000   |
-| Rom name: KOI WA KAKEHIKI  | Size in bytes: 0x008000 | Starting offset: 0x618000   |
-| Rom name: KWIRK            | Size in bytes: 0x008000 | Starting offset: 0x620000   |
-| Rom name: LOOPZ            | Size in bytes: 0x008000 | Starting offset: 0x628000   |
-| Rom name: THEGAMEOFHARMONY | Size in bytes: 0x008000 | Starting offset: 0x630000   |
-| Rom name: MINESWEEPER      | Size in bytes: 0x008000 | Starting offset: 0x638000   |
-| Rom name: MISSILE COMMAND  | Size in bytes: 0x008000 | Starting offset: 0x640000   |
-| Rom name: MOTOCROSSMANIACS | Size in bytes: 0x008000 | Starting offset: 0x648000   |
-| Rom name: NFL FOOTBALL     | Size in bytes: 0x008000 | Starting offset: 0x650000   |
-| Rom name: PALAMEDES        | Size in bytes: 0x008000 | Starting offset: 0x658000   |
-| Rom name: PENGUIN LAND     | Size in bytes: 0x008000 | Starting offset: 0x660000   |
-| Rom name: PIPE DREAM       | Size in bytes: 0x008000 | Starting offset: 0x668000   |
-| Rom name: POP UP           | Size in bytes: 0x010000 | Starting offset: 0x670000   |
-| Rom name: QBILLION         | Size in bytes: 0x008000 | Starting offset: 0x680000   |
-| Rom name: SERPENT          | Size in bytes: 0x008000 | Starting offset: 0x688000   |
-| Rom name: TESSERAE         | Size in bytes: 0x008000 | Starting offset: 0x690000   |
-| Rom name: WORLD BOWLING    | Size in bytes: 0x008000 | Starting offset: 0x698000   |
-| Rom name: DAEDALIAN OPUS   | Size in bytes: 0x060000 | Starting offset: 0x6A0000   |
-| Rom name: TENCHIWOKURAU    | Size in bytes: 0x080000 | Starting offset: 0x700000   |
-| Rom name: DONKEY KONG      | Size in bytes: 0x080000 | Starting offset: 0x780000   |
+| HITEK_MULTI      | 0x400000 | 0x000000|
+| SUPER MARIOLAND  | 0x010000 | 0x400000|
+| BUGS BUNNY       | 0x010000 | 0x410000|
+| PARASORU HEMBEI  | 0x010000 | 0x420000|
+| GO GO TANK       | 0x010000 | 0x430000|
+| ALADDIN          | 0x040000 | 0x440000|
+| CONTRA           | 0x020000 | 0x480000|
+| MARIO & YOSHI    | 0x010000 | 0x4A0000|
+| DUCK TALES       | 0x010000 | 0x4B0000|
+| PAC-MAN          | 0x010000 | 0x4C0000|
+| SIDE POCKET      | 0x010000 | 0x4D0000|
+| KID NIKI         | 0x010000 | 0x4E0000|
+| YARSREVENGEAYVE | 0x010000 | 0x4F0000|
+| YAKUMAN          | 0x008000 | 0x500000|
+| BUBBLE GHOST     | 0x008000 | 0x508000|
+| MIGRAIN ACCLAIM  | 0x008000 | 0x510000|
+| OTHELLO          | 0x008000 | 0x518000|
+| HONG KONG        | 0x008000 | 0x520000|
+| KORODICE         | 0x008000 | 0x528000|
+| MASTER KARATEKA  | 0x008000 | 0x530000|
+| SHISENSYO        | 0x008000 | 0x538000|
+| SHANGHAI         | 0x008000 | 0x540000|
+| TENNIS           | 0x008000 | 0x548000|
+|  - TRUMP  BOY -  | 0x008000 | 0x550000|
+| VOLLEY FIRE      | 0x008000 | 0x558000|
+| ALLEY WAY        | 0x008000 | 0x560000|
+| PITMAN           | 0x008000 | 0x568000|
+| SPACE INVADERS   | 0x008000 | 0x570000|
+| ASTEROIDS        | 0x008000 | 0x578000|
+| BATTLECITY       | 0x008000 | 0x580000|
+| BOMB JACK        | 0x008000 | 0x588000|
+| BOXXLE           | 0x008000 | 0x590000|
+| BOXXLE2          | 0x008000 | 0x598000|
+| AMIDA            | 0x008000 | 0x5A0000|
+| TETRIS           | 0x008000 | 0x5A8000|
+| BRAINBENDER      | 0x008000 | 0x5B0000|
+| TIC-TAC-TOE      | 0x008000 | 0x5B8000|
+| CASTELIAN        | 0x008000 | 0x5C0000|
+| CENTIPEDE        | 0x008000 | 0x5C8000|
+| CRYSTAL QUEST    | 0x008000 | 0x5D0000|
+| DRAGON SLAYER 1  | 0x008000 | 0x5D8000|
+| DROPZONE         | 0x008000 | 0x5E0000|
+| DR.MARIO         | 0x008000 | 0x5E8000|
+| FLAPPY SPECIAL   | 0x008000 | 0x5F0000|
+| FLIPULL          | 0x008000 | 0x5F8000|
+| HEIANKYO ALIEN   | 0x008000 | 0x600000|
+| HYPERLODERUNNER  | 0x008000 | 0x608000|
+| KLAX             | 0x008000 | 0x610000|
+| KOI WA KAKEHIKI  | 0x008000 | 0x618000|
+| KWIRK            | 0x008000 | 0x620000|
+| LOOPZ            | 0x008000 | 0x628000|
+| THEGAMEOFHARMONY | 0x008000 | 0x630000|
+| MINESWEEPER      | 0x008000 | 0x638000|
+| MISSILE COMMAND  | 0x008000 | 0x640000|
+| MOTOCROSSMANIACS | 0x008000 | 0x648000|
+| NFL FOOTBALL     | 0x008000 | 0x650000|
+| PALAMEDES        | 0x008000 | 0x658000|
+| PENGUIN LAND     | 0x008000 | 0x660000|
+| PIPE DREAM       | 0x008000 | 0x668000|
+| POP UP           | 0x010000 | 0x670000|
+| QBILLION         | 0x008000 | 0x680000|
+| SERPENT          | 0x008000 | 0x688000|
+| TESSERAE         | 0x008000 | 0x690000|
+| WORLD BOWLING    | 0x008000 | 0x698000|
+| DAEDALIAN OPUS   | 0x060000 | 0x6A0000|
+| TENCHIWOKURAU    | 0x080000 | 0x700000|
+| DONKEY KONG      | 0x080000 | 0x780000|
 
 The first rom is a giant 4MB partition containing the 'filesystem', a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation data. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games, without any particular order of size. This rom structure is very unusual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are packed more efficiently at offset multiple of their own size. I do not know at the moment if the GBCK003 can be flashed back with a custom rom.
 
