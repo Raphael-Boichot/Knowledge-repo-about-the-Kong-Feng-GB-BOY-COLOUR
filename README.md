@@ -45,7 +45,7 @@ The global rom organisation is the following (by increasing offset):
 | PAC-MAN          | 0x010000 | 0x4C0000|
 | SIDE POCKET      | 0x010000 | 0x4D0000|
 | KID NIKI         | 0x010000 | 0x4E0000|
-| YARSREVENGEAYVE | 0x010000 | 0x4F0000|
+| YARSREVENGEAYVE  | 0x010000 | 0x4F0000|
 | YAKUMAN          | 0x008000 | 0x500000|
 | BUBBLE GHOST     | 0x008000 | 0x508000|
 | MIGRAIN ACCLAIM  | 0x008000 | 0x510000|
