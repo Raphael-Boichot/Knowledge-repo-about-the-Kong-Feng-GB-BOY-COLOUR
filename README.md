@@ -33,7 +33,7 @@ The global rom organisation is the following (by increasing offset):
 
 | Rom name:                  | Size in bytes:          |Starting offset:             |
 |----------------------------|-------------------------|-----------------------------|
-| HITEK_MULTI      | 0x400000 | 0x000000|
+| **HITEK_MULTI**      | **0x400000** | **0x000000**|
 | SUPER MARIOLAND  | 0x010000 | 0x400000|
 | BUGS BUNNY       | 0x010000 | 0x410000|
 | PARASORU HEMBEI  | 0x010000 | 0x420000|
