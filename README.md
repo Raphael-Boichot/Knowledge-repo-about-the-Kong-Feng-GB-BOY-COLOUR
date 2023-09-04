@@ -32,11 +32,11 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 The global rom organisation is the following (by increasing offset):
 Rom name: HITEK_MULTI      | Size in bytes: 0x400000 | Starting offset: 0x000000
 Rom name: SUPER MARIOLAND  | Size in bytes: 0x010000 | Starting offset: 0x400000
-- Rom name: BUGS BUNNY       - Size in bytes: 0x010000 - Starting offset: 0x410000
-- Rom name: PARASORU HEMBEI  - Size in bytes: 0x010000 - Starting offset: 0x420000
-- Rom name: GO GO TANK       - Size in bytes: 0x010000 - Starting offset: 0x430000
-- Rom name: ALADDIN          - Size in bytes: 0x040000 - Starting offset: 0x440000
-- Rom name: CONTRA           - Size in bytes: 0x020000 - Starting offset: 0x480000
+Rom name: BUGS BUNNY       | Size in bytes: 0x010000 | Starting offset: 0x410000
+Rom name: PARASORU HEMBEI  | Size in bytes: 0x010000 | Starting offset: 0x420000
+Rom name: GO GO TANK       | Size in bytes: 0x010000 | Starting offset: 0x430000
+Rom name: ALADDIN          | Size in bytes: 0x040000 | Starting offset: 0x440000
+Rom name: CONTRA           | Size in bytes: 0x020000 | Starting offset: 0x480000
 - Rom name: MARIO & YOSHI    - Size in bytes: 0x010000 - Starting offset: 0x4A0000
 - Rom name: DUCK TALES       - Size in bytes: 0x010000 - Starting offset: 0x4B0000
 - Rom name: PAC-MAN          - Size in bytes: 0x010000 - Starting offset: 0x4C0000
