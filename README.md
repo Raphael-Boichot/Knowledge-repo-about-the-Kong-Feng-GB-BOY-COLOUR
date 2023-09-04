@@ -20,12 +20,12 @@ Side note, the flash chip is rated for 3.3 only and is directly wired to the +5V
 ## Detail of the internal rom pinout (flash chip is a 8MB MX29LV640EBTI)
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
-At this point, it is quite "easy" to wire the desoldered internal rom to any Game Boy PCB from my own PCB cemetary and see what happens. Wiring it manually pin by pin was in fact an excruciating pain but it's for science. Well, of course it works !
+At this point, it is quite "easy" to directly wire the desoldered internal rom to any Game Boy PCB (CS and A15 included) from my own PCB graveyard and see what happens (it was a Divastarz cartridge in the past, it died without suffering). Wiring it manually pin by pin was in fact quite an excruciating pain but it was for science. Well, and of course it works !
 
 ## Do you trust in Science ? Now playing the 188 in 1 without the hideous stretching !
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
 
-The rom is quite badly compiled so the checksum is bad (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom can anyway be dumped with FlashGBX and a GBXCart with the following parameters (do not mind the checksum error): 
+The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom can anyway be dumped with FlashGBX and a GBXCart with the following parameters (do not mind the checksum error, the dump will be good): 
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
