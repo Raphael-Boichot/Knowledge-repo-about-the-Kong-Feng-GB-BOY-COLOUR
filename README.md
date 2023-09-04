@@ -15,10 +15,13 @@ The board with the internal rom desoldered is rather empty and lot of room is le
 ## Wiring between the 30 pins internal rom and the 32 pins GB compatible cartridge slot.
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
 
-## Detail of the internal rom pinout
+## Detail of the internal rom pinout (main chip is a MX29LV640EBTI)
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
-At this point, it is quite easy to wire the desoldered internal rom to any Game Boy PCB from my own PCB cemetary and see what happens.
+At this point, it is quite easy to wire the desoldered internal rom to any Game Boy PCB from my own PCB cemetary and see what happens. Wiring it manually pin by pin is an excruciating pain but it's for science. Well, of course it works !
 
 ## Do you trust in Science ?
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
+
+## Most clean Cartmod ever
+![cleanest cartmod](Pictures/Clean_mod.jpg)
