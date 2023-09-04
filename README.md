@@ -12,3 +12,7 @@ The console comes with a 188-in-one internal rom. It contains in real only 66 di
 The board with the internal rom desoldered is rather empty and lot of room is lefet below the display. The display itself is also quite difficult to remove to to very tight tolerance on cables. Next image shows the wiring diagram from the internal rom to the Cartridge slot. The Audio in and Clock pin of Game Boy are not connected.
 
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
+
+![the GB Boy Colour pinout](Pictures/Pinout_2.png)
+
+At this point, it is quite easy to wire the desoldered internal rom to any
