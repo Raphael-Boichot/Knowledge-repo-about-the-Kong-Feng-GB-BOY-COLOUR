@@ -7,12 +7,15 @@ It features a quite hideous backlite screen. Hideous due to a pronounced blue hu
 
 The console comes with a 188-in-one internal rom. It contains in real only 66 different games (all classics). It is directly soldered to the motherboard and is quite difficult to remove without damaging the traces. The internal rom in functional only without any cartridge inserted thanks to a small mechanical switch. In case a cartridge is inserted, it pulls high the A15 and CS lines of the rom board, deactivating it.
 
+## The main board with insert showing the switch circuit for activating/deactivating the internal rom
 ![the GB Boy Colour Board](Pictures/Board.png)
 
 The board with the internal rom desoldered is rather empty and lot of room is lefet below the display. The display itself is also quite difficult to remove to to very tight tolerance on cables. Next image shows the wiring diagram from the internal rom to the Cartridge slot. The Audio in and Clock pin of Game Boy are not connected.
 
+## Wiring between the 30 pins internal rom anf the 32 pins GB compatible cartridge slot.
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
 
+## Detail of the internal rom pinout
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
 At this point, it is quite easy to wire the desoldered internal rom to any
