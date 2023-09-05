@@ -101,7 +101,7 @@ The global rom organisation is the following (by increasing offset):
 | TENCHIWOKURAU    | 0x080000 | 0x700000|
 | DONKEY KONG      | 0x080000 | 0x780000|
 
-The first rom is a giant 4MB partition containing the 'filesystem', a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation data. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games, without any particular order of size. This rom structure is very unusual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are packed more efficiently at offset multiple of their own size. I do not know at the moment if the GBCK003 can be flashed back with a custom rom.
+The first rom is a giant 4MB partition containing the 'filesystem', a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation data. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games (and honestly, they make the job), without any particular order of size. This rom structure is quite unusual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are packed more efficiently at offset multiple of their own size. I do not know at the moment if the GBCK003 can be flashed back with a custom rom.
 
 ## Most clean Cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
