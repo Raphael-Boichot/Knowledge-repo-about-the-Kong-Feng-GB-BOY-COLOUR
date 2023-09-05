@@ -1,6 +1,5 @@
 # Knowledge repository about the Kong Feng GB BOY COLOUR
 
-## Some general informations
 The GB Boy Colour is a Chinese Game Boy Color clone from brand new parts made by the Kong Feng Company (KF). The model follows the GB Boy, a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in GBC form factor is now more expensive than a legit GBC in 2023. As usual with Chinese repro, there is no available documentation and the origin of the KF main processor is not documented (pure reverse engineering or just leak of the masks, who knows).
 
 It features a quite hideous backlite screen. Hideous due to a pronounced blue hue and a very average stretching/upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard]((https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/))) and the GB Boy Colour itself is a 100% compatible GBC-like console. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED). GB and GBC regular cartridges are all compatible. Flash cartridges are more or less, due the 5V power board that is a bit weak (the EZ-Flash jr boots with difficulty due to current draw). The size tolerance of the cartridge slot is a bit off. Inserting and wobbling the cartridge is sometimes necessary to boot a game. But it's generally fine. The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. It is reported that the sound has issues but I think the only reason is that the speaker does no mix the stereo signal. It sounds correct for a casual player at least.
@@ -20,7 +19,6 @@ Side note, the flash chip (29LV640) is rated for 3.3 only and is directly wired 
 ## Detail of the internal rom pinout (flash chip is a 8MB MX29LV640EBTI)
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
-## Dumping the internal rom
 At this point, it is quite "easy" to directly wire the desoldered internal rom to any spare Game Boy PCB (CS and A15 included) from my own graveyard and see what happens (I used a Divastarz PCB for the job, it [died without suffering](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project#game-boy-mbc5-mappers)). Wiring it manually pin by pin was in fact a 3 hours long painfull task but it was for science. Well, and of course it works !
 
 ## Do you trust in Science ? Now playing the 188 in 1 without the hideous stretching !
