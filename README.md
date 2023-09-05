@@ -97,7 +97,7 @@ The global rom organisation is the following (by increasing offset):
 | SERPENT          | 0x008000 | 0x688000|
 | TESSERAE         | 0x008000 | 0x690000|
 | WORLD BOWLING    | 0x008000 | 0x698000|
-| DAEDALIAN OPUS   | 0x060000 | 0x6A0000|
+| DAEDALIAN OPUS   | **0x060000** | 0x6A0000|
 | TENCHIWOKURAU    | 0x080000 | 0x700000|
 | DONKEY KONG      | 0x080000 | 0x780000|
 
