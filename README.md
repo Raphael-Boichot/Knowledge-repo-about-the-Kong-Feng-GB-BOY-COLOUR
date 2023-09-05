@@ -101,9 +101,9 @@ The global rom organisation is the following (by increasing offset):
 | TENCHIWOKURAU    | 0x080000 | 0x700000|
 | DONKEY KONG      | 0x080000 | 0x780000|
 
-The first rom is a giant 4MB partition containing the "filesystem", a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation junk. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games, without any particular order of size. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offset multiple of their own size. There is however a bug in the process: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). I do not know the purpose of this as the space could have been occupied by other 32 KB games, the number of entries of the menu being largely sufficient.
+The first rom is a giant 4MB partition containing the "filesystem", a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation junk. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games, without any particular order of size. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offset multiple of their own size. There is however a bug in the process: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). I do not know the purpose of this (apart from fixing alignement issue for the next game) as the space could have been occupied by other 32 KB games instead of being blank, the number of entries of the menu being largely sufficient.
 
-Writing back to the GBCK003 is at the moment not supported by ant flasher I know.
+Writing back to the GBCK003 is at the moment not supported by any flasher I know.
 
 ## Most clean Cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
