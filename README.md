@@ -31,7 +31,7 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 
 The global rom organisation is the following (by increasing offset):
 
-| Data:                  | Size in bytes:          |Starting offset:             |
+| Data (rom or junk):                  | Size in bytes:          |Starting offset:             |
 |----------------------------|-------------------------|-----------------------------|
 | **HITEK_MULTI**      | **0x008000** | **0x000000**|
 | **JUNK DATA**  | **0x3F8000** | **0x080001**|
