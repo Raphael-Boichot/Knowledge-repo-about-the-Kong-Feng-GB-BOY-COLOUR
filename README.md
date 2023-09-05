@@ -7,7 +7,7 @@ It features a quite hideous backlite screen. Hideous due to a pronounced blue hu
 
 The console comes with a 188-in-one internal rom, labelled GBCK003. It contains in real only 66 different games (all arcade classics, and quite decent ones, but GB only) with repeated entries, without any save possibility. It is directly soldered to the motherboard and is quite difficult to remove without damaging the traces. The GB Boy and the GB Boy Colour seems to share the exact same internal rom. The internal rom is activated only without any cartridge inserted thanks to a small mechanical switch. In case a cartridge is inserted, it pulls high the A15 and CS lines of the rom board, deactivating it.
 
-## The main board with insert showing the switch circuit for activating/deactivating the internal rom
+## The main board showing the switch circuit for activating/deactivating the internal rom
 ![the GB Boy Colour Board](Pictures/Board.png)
 
 The board with the internal rom desoldered is rather empty and lot of room is left below the display. The display itself is also quite difficult to remove to to very tight tolerance on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
