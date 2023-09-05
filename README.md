@@ -34,6 +34,7 @@ The global rom organisation is the following (by increasing offset):
 | Rom name:                  | Size in bytes:          |Starting offset:             |
 |----------------------------|-------------------------|-----------------------------|
 | **HITEK_MULTI**      | **0x008000** | **0x000000**|
+| **JUNK DATA**  | **0x3F8000** | **0x08001**|
 | SUPER MARIOLAND  | 0x010000 | 0x400000|
 | BUGS BUNNY       | 0x010000 | 0x410000|
 | PARASORU HEMBEI  | 0x010000 | 0x420000|
@@ -97,7 +98,8 @@ The global rom organisation is the following (by increasing offset):
 | SERPENT          | 0x008000 | 0x688000|
 | TESSERAE         | 0x008000 | 0x690000|
 | WORLD BOWLING    | 0x008000 | 0x698000|
-| DAEDALIAN OPUS   | **0x008000** | 0x6A0000|
+| DAEDALIAN OPUS   | **0x008000** | **0x6A0000**|
+| **JUNKA DATA**   | **0x058000** | **0x6A8001**|
 | TENCHIWOKURAU    | 0x080000 | 0x700000|
 | DONKEY KONG      | 0x080000 | 0x780000|
 
