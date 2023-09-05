@@ -1,26 +1,26 @@
 # Knowledge repository about the Kong Feng GB BOY COLOUR
 ## All that I found by tearing down the Kong Feng GB BOY COLOUR
 
-The GB Boy Colour is a Chinese Game Boy Color clone from brand new parts made by the Kong Feng Company. The model follows the GB Boy, a Game Boy clone. It is now apparently discontinued since 2022. The (laughable) consequence is that the clone is now more expensive than an orginal GBC.
+The GB Boy Colour is a Chinese Game Boy Color clone from brand new parts made by the Kong Feng Company. The model follows the GB Boy, a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a GBA clone. The (laughable) consequence is that the GB Boy Colour is now more expensive than an orginal GBC.
 
-It features a quite hideous backlite screen. Hideous due to a pronounced blue hue and a very bad stretching/upscaling. Lover of pixel perfect screens, move on. Apart from that, the processor is perfectly pinout compatible with a GBC (it can be directly dropped on a GBC motherboard) and the GB Boy Colour itself is a perfectly functionnal GBC-like console. GB printer and serial functions are perfectly working. IR fonctions are not. Cartridges are all compatible knowing the fact that the 5V power board is a bit weak (the EZ-Flash jr boots with difficulty due to current draw) and that the size tolerance of the cartridge slot is off. Inserting and wobbling the cartridge is sometimes necessary to boot a game. But it's generally fine. The console is overall better than a non modded GBC regarding ergonomy. Pads and buttons do not feel as cheap as the ones delivered with replacement shells do.
+It features a quite hideous backlite screen. Hideous due to a pronounced blue hue and a very bad stretching/upscaling. Lover of pixel perfect screens, move on. Apart from that, the processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard]((https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/))) and the GB Boy Colour itself is a functional GBC-like console. GB printer and serial functions are perfectly working. IR fonctions are however not connected. GB and GBC regular cartridges are all compatible. Flash cartridges are more or less, due the 5V power board that is a bit weak (the EZ-Flash jr boots with difficulty due to current draw). The size tolerance of the cartridge slot is a bit off. Inserting and wobbling the cartridge is sometimes necessary to boot a game. But it's generally fine. The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. It is reported that the sound has issues but I think the only reason is that the speaker does no mix the stereo signal. It sounds correct for a casual player at least.
 
-The console comes with a 188-in-one internal rom, labelled GBCK003. It contains in real only 66 different games (all arcade classics), without any save possibility. It is directly soldered to the motherboard and is quite difficult to remove without damaging the traces. The internal rom is functional only without any cartridge inserted thanks to a small mechanical switch. In case a cartridge is inserted, it pulls high the A15 and CS lines of the rom board, deactivating it.
+The console comes with a 188-in-one internal rom, labelled GBCK003. It contains in real only 66 different games (all arcade classics, and quite decent ones, but GB only), without any save possibility. It is directly soldered to the motherboard and is quite difficult to remove without damaging the traces. The GB Boy and the GB Boy Colour seems to share the exact same internal rom. The internal rom is activated only without any cartridge inserted thanks to a small mechanical switch. In case a cartridge is inserted, it pulls high the A15 and CS lines of the rom board, deactivating it.
 
 ## The main board with insert showing the switch circuit for activating/deactivating the internal rom
 ![the GB Boy Colour Board](Pictures/Board.png)
 
-The board with the internal rom desoldered is rather empty and lot of room is left below the display. The display itself is also quite difficult to remove to to very tight tolerance on cables. Next image shows the wiring diagram from the internal rom to the cartridge slot. The Audio in and Clock pin of Game Boy are not connected.
+The board with the internal rom desoldered is rather empty and lot of room is left below the display. The display itself is also quite difficult to remove to to very tight tolerance on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
 
 ## Wiring between the 30 pins internal rom and the 32 pins GB compatible cartridge slot.
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
 
-Side note, the flash chip is rated for 3.3 only and is directly wired to the +5V of the GB Boy Colour. It ran on my side for dozens of hours, but how many more will it survive ?
+Side note, the flash chip (29LV640) is rated for 3.3 only and is directly wired to the +5V of the GB Boy Colour. It ran on my side for dozens of hours, but how many more will it survive ? Mystery...
 
 ## Detail of the internal rom pinout (flash chip is a 8MB MX29LV640EBTI)
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
-At this point, it is quite "easy" to directly wire the desoldered internal rom to any Game Boy PCB (CS and A15 included) from my own PCB graveyard and see what happens (it was a Divastarz cartridge in the past, it died without suffering). Wiring it manually pin by pin was in fact quite an excruciating pain but it was for science. Well, and of course it works !
+At this point, it is quite "easy" to directly wire the desoldered internal rom to any spare Game Boy PCB (CS and A15 included) from my own graveyard and see what happens (I used a Divastarz PCB for the job, it [died without suffering](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project#game-boy-mbc5-mappers)). Wiring it manually pin by pin was in fact a 3 hours long painfull task but it was for science. Well, and of course it works !
 
 ## Do you trust in Science ? Now playing the 188 in 1 without the hideous stretching !
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
@@ -101,7 +101,9 @@ The global rom organisation is the following (by increasing offset):
 | TENCHIWOKURAU    | 0x080000 | 0x700000|
 | DONKEY KONG      | 0x080000 | 0x780000|
 
-The first rom is a giant 4MB partition containing the 'filesystem', a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation data. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games (and honestly, they make the job), without any particular order of size. This rom structure is quite unusual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are packed more efficiently at offset multiple of their own size. I do not know at the moment if the GBCK003 can be flashed back with a custom rom.
+The first rom is a giant 4MB partition containing the "filesystem", a library of tile for dealing with the Chinese characters displayed on screen and lots of compilation junk. Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games, without any particular order of size. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offset multiple of their own size. There is however a bug in the process: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). I do not know the purpose of this as the space could have been occupied by other 32 KB games, the number of entries of the menu being largely sufficient.
+
+Writing back to the GBCK003 is at the moment not supported by ant flasher I know.
 
 ## Most clean Cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
