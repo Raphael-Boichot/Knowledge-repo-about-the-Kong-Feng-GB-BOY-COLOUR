@@ -105,5 +105,5 @@ The first rom is a giant 4MB partition containing the "filesystem", a library of
 
 Writing back to the GBCK003 is at the moment not supported by any flasher I know.
 
-## Most clean Cartmod ever
+## The most unique and janky cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
