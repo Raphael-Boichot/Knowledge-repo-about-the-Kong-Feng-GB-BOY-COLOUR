@@ -21,14 +21,14 @@ Side note, the flash chip (29LV640) is rated for 3.3V only and is directly wired
 
 At this point, it is quite "easy" to directly wire the desoldered internal rom to any spare Game Boy cartridge PCB (CS and A15 included). I used a Divastarz PCB for the job, it [died without suffering](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project#game-boy-mbc5-mappers) when giving its MBC to Science in a prior project. Wiring it manually pin by pin was a painfull task but at least it works !
 
-## Do you trust in Science ? Now playing the 188 in 1 without the hideous stretching !
+## Playing the 188 in 1 cartridge on legit Game Boy Color
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
 
+## Rom deep analysis
 The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom indicates that it is driven by a MBC5 compatible mapper which is plausible. Anyway,dump can be made with FlashGBX and a GBXCart entering the following parameters (do not mind the checksum error, the dump will be good): 
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
-## Rom analysis
 The global rom organisation is the following (by increasing offset):
 
 | Data (rom or junk):                  | Size in bytes:          |Starting offset:             |
