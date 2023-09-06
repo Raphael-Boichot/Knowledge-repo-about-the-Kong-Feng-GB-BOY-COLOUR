@@ -14,7 +14,7 @@ The front board with the internal rom desoldered is rather empty and lot of room
 ## Wiring between the 30 pins internal rom and the 32 pins GB compatible cartridge slot.
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
 
-Side note, the flash chip (29LV640) is rated for 3.3 only and is directly wired to the +5V of the GB Boy Colour. It ran on my side for dozens of hours, but how many more will it survive ? Mystery...
+Side note, the flash chip (29LV640) is rated for 3.3V only and is directly wired to the +5V of the GB Boy Colour. It ran on my side for dozens of hours, but how many more will it survive ? Mystery...
 
 ## Detail of the internal rom pinout (flash chip is a 8MB MX29LV640EBTI)
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
