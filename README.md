@@ -24,7 +24,7 @@ At this point, it is quite "easy" to directly wire the desoldered internal rom t
 ## Do you trust in Science ? Now playing the 188 in 1 without the hideous stretching !
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
 
-The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom can anyway be dumped with FlashGBX and a GBXCart with the following parameters (do not mind the checksum error, the dump will be good): 
+The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom indicates that it is driven by a MBC5 compatible mapper which is plausible. Anyway,dump can be made with FlashGBX and a GBXCart entering the following parameters (do not mind the checksum error, the dump will be good): 
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
