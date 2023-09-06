@@ -106,5 +106,7 @@ The first part of the 8MB rom is a giant 4MB partition with lot of unexpected st
 
 Next 4 MB is occupied by 66 unique roms, mostly MBC1 and no mapper games, without any particular order of size. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offset multiple of their own size. There is however a bug in the process: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). I do not know the purpose of this (apart from fixing alignement issue for the next game) as the space could have been occupied by 11 other 32 KB games instead of being blank, the number of entries of the menu being largely sufficient. The 4MB upper part of the rom could theoretically handle 128x32 KB games. I do not understand how the menu entries are connected to rom offsets for the moment, but as the rom is not supported by any emulator, nor the GBCK003 by any flasher, I postpone any further research on this rom as I cannot test my hypotheses.
 
+The rom structure is just a bit unusual for a multi-game rom, where aligning roms at offsets multiple of their own size is an enough condition, without the need to have 4MB of empty space between the boot rom and the game roms.
+
 ## The most unique and janky cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
