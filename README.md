@@ -28,6 +28,7 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
+## Rom analysis
 The global rom organisation is the following (by increasing offset):
 
 | Data (rom or junk):                  | Size in bytes:          |Starting offset:             |
