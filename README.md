@@ -9,7 +9,7 @@ The console comes with a 188-in-one internal rom, labelled GBCK003. It contains 
 ## The main board showing the switch circuit for activating/deactivating the internal rom
 ![the GB Boy Colour Board](Pictures/Board.png)
 
-The front board with the internal rom desoldered is rather empty and lot of room is left below the display. The display itself is also quite difficult to remove due to very tight tolerance on the ribbon. I did not find the reference despite markings on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
+The front board with the internal rom desoldered is rather empty and lot of room is left behind the display. The display itself is also quite difficult to remove due to very tight tolerance on the ribbon. I did not find the reference despite markings on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
 
 ## Wiring between the 30 pins internal rom and the 32 pins GB compatible cartridge slot.
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
