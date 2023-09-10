@@ -19,7 +19,7 @@ Side note, the flash chip (29LV640) is rated for 3.3V only and is directly wired
 ## Detail of the internal rom pinout (flash chip is a 8MB MX29LV640EBTI)
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
-At this point, it is quite "easy" to directly wire the desoldered internal rom to any spare Game Boy cartridge PCB (CS and A15 included). I used a Divastarz PCB for the job, it [died without suffering](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project#game-boy-mbc5-mappers) when giving its MBC to Science in a prior project. Wiring it manually pin by pin was a painfull task but at least it works !
+At this point, it is quite "easy" to directly wire the desoldered internal rom to any spare Game Boy cartridge PCB (CS and A15 included). I used a Divastarz PCB for the job, it [died without suffering](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project#game-boy-mbc5-mappers) when giving its MBC to Science in a prior project. Wiring all that shit manually pin by pin was a painfull task but at least it works !
 
 ## Playing the 188 in 1 cartridge on legit Game Boy Color
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
