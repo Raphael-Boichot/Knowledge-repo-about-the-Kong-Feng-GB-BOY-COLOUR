@@ -32,8 +32,79 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 Sadly, the current FlashGBX version does not allow to flash this chip (it is not referenced in the database), only to read it. 
 The global rom organisation is the following (by increasing offset):
 
-| Data (rom or junk):                  | Size in bytes:          |Starting offset:             |
-|----------------------------|-------------------------|-----------------------------|
+| Data (rom or junk):                  | Size in bytes:          |Starting offset:             |Starting bank:             |
+|----------------------------|-------------------------|-----------------------------|-----------------------------|
+| HITEK_MULTI      | 0x400000 | 0x000000|0|
+| **Junk data**  | **0x3F8000** | **0x080001**|-|
+| SUPER MARIOLAND  | 0x010000 | 0x400000|80|
+| BUGS BUNNY       | 0x010000 | 0x410000|82|
+| PARASORU HEMBEI  | 0x010000 | 0x420000|84|
+| GO GO TANK       | 0x010000 | 0x430000|86|
+| ALADDIN          | 0x040000 | 0x440000|88|
+| CONTRA           | 0x020000 | 0x480000|90|
+| MARIO & YOSHI    | 0x010000 | 0x4A0000|94|
+| DUCK TALES       | 0x010000 | 0x4B0000|96|
+| PAC-MAN          | 0x010000 | 0x4C0000|98|
+| SIDE POCKET      | 0x010000 | 0x4D0000|9A|
+| KID NIKI         | 0x010000 | 0x4E0000|9C|
+| YARSREVENGEAYVE  | 0x010000 | 0x4F0000|9E|
+| YAKUMAN          | 0x008000 | 0x500000|A0|
+| BUBBLE GHOST     | 0x008000 | 0x508000|A1|
+| MIGRAIN ACCLAIM  | 0x008000 | 0x510000|A2|
+| OTHELLO          | 0x008000 | 0x518000|A3|
+| HONG KONG        | 0x008000 | 0x520000|A4|
+| KORODICE         | 0x008000 | 0x528000|A5|
+| MASTER KARATEKA  | 0x008000 | 0x530000|A6|
+| SHISENSYO        | 0x008000 | 0x538000|A7|
+| SHANGHAI         | 0x008000 | 0x540000|A8|
+| TENNIS           | 0x008000 | 0x548000|A9|
+|  - TRUMP  BOY -  | 0x008000 | 0x550000|AA|
+| VOLLEY FIRE      | 0x008000 | 0x558000|AB|
+| ALLEY WAY        | 0x008000 | 0x560000|AC|
+| PITMAN           | 0x008000 | 0x568000|AD|
+| SPACE INVADERS   | 0x008000 | 0x570000|AE|
+| ASTEROIDS        | 0x008000 | 0x578000|AF|
+| BATTLECITY       | 0x008000 | 0x580000|B0|
+| BOMB JACK        | 0x008000 | 0x588000|B1|
+| BOXXLE           | 0x008000 | 0x590000|B2|
+| BOXXLE2          | 0x008000 | 0x598000|B3|
+| AMIDA            | 0x008000 | 0x5A0000|B4|
+| TETRIS           | 0x008000 | 0x5A8000|B5|
+| BRAINBENDER      | 0x008000 | 0x5B0000|B6|
+| TIC-TAC-TOE      | 0x008000 | 0x5B8000|B7|
+| CASTELIAN        | 0x008000 | 0x5C0000|B8|
+| CENTIPEDE        | 0x008000 | 0x5C8000|B9|
+| CRYSTAL QUEST    | 0x008000 | 0x5D0000|BA|
+| DRAGON SLAYER 1  | 0x008000 | 0x5D8000|BB|
+| DROPZONE         | 0x008000 | 0x5E0000|BC|
+| DR.MARIO         | 0x008000 | 0x5E8000|BD|
+| FLAPPY SPECIAL   | 0x008000 | 0x5F0000|BE|
+| FLIPULL          | 0x008000 | 0x5F8000|BF|
+| HEIANKYO ALIEN   | 0x008000 | 0x600000|C0|
+| HYPERLODERUNNER  | 0x008000 | 0x608000|C1|
+| KLAX             | 0x008000 | 0x610000|C2|
+| KOI WA KAKEHIKI  | 0x008000 | 0x618000|C3|
+| KWIRK            | 0x008000 | 0x620000|C4|
+| LOOPZ            | 0x008000 | 0x628000|C5|
+| THEGAMEOFHARMONY | 0x008000 | 0x630000|C6|
+| MINESWEEPER      | 0x008000 | 0x638000|C7|
+| MISSILE COMMAND  | 0x008000 | 0x640000|C8|
+| MOTOCROSSMANIACS | 0x008000 | 0x648000|C9|
+| NFL FOOTBALL     | 0x008000 | 0x650000|CA|
+| PALAMEDES        | 0x008000 | 0x658000|CB|
+| PENGUIN LAND     | 0x008000 | 0x660000|CC|
+| PIPE DREAM       | 0x008000 | 0x668000|CD|
+| POP UP           | 0x010000 | 0x670000|CE|
+| QBILLION         | 0x008000 | 0x680000|D0|
+| SERPENT          | 0x008000 | 0x688000|D1|
+| TESSERAE         | 0x008000 | 0x690000|D2|
+| WORLD BOWLING    | 0x008000 | 0x698000|D3|
+| DAEDALIAN OPUS   | 0x060000 | 0x6A0000|D4|
+| **Junk data**   | **0x058000** | **0x6A8001**|-|
+| TENCHIWOKURAU    | 0x080000 | 0x700000|E0|
+| DONKEY KONG      | 0x080000 | 0x780000|F0|
+
+
 | **HITEK_MULTI**      | **0x008000** | **0x000000**|
 | **Junk data**  | **0x3F8000** | **0x080001**|
 | SUPER MARIOLAND  | 0x010000 | 0x400000|
