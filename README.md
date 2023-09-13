@@ -30,7 +30,7 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
-Sadly, the current FlashGBX version does not allow to flash this chip (it is not referenced in the database), only to read it. 
+Sadly, the current FlashGBX version does not allow to flash this chip back (it is not referenced in the database), only to read it. 
 The global rom organisation is the following (by increasing offset or increasing banks of 32 kB):
 
 | Data (rom or junk):                  | Size in bytes:          |Starting offset:             |Starting bank:             |
@@ -119,12 +119,12 @@ The first part of the 8MB rom is a giant 4MB partition with mainly junk data. Th
 - 0x005830 - 0x006708: tilemap for Chinese characters corresponding to each game in the same order. Each game has a 20 characters reserved space too (not sure of the encoding as it occupies 2 lines so 40 tiles on screen, a character targeting 2 vertical tiles).
 - 0x006709 - 0x008000: tileset for Chinese characters.
 
-## Array of starting bank for roms in the same order as the games name in menu
+## Array of starting banks for roms in the same order as the games in menu
 ![starting banks](Pictures/Bank_array.png)
 
 The better (according to Chinese players taste) roms are intentionnaly placed on the first menu page. Quite a good selection I must admit.
 
-## Tilemap for western text in ASCII
+## Tilemap for text in plain ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
 
 ## From bank #01 to bank #7F, junk data
