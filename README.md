@@ -106,7 +106,7 @@ The global rom organisation is the following (by increasing offset or increasing
 
 The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite primitive: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
 
-## Array of starting bank for roms in the same order as the roms in the menu
+## Array of starting bank for roms in the same order as the games name in menu
 ![starting banks](Pictures/Bank_array.png)
 
 The better (bigger or more famous according to programmer's taste) roms are intentionnaly placed on the first menu page.
