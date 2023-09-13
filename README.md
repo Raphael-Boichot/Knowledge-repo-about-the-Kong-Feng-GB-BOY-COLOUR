@@ -107,7 +107,7 @@ The global rom organisation is the following (by increasing offset or increasing
 
 The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite simple to grasp: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
 
-## HITEK_MULTI rom analysis
+## HITEK_MULTI rom analysis, bank #00
 
 - 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is clearly a copy/paste from another game. However no documented game has this checksum...
 - 0x000151 - 0x004000: nothing but 0x00, codes jumps directly to 0x004001.
@@ -127,15 +127,15 @@ The better (according to Chinese players taste) roms are intentionnaly placed on
 ## Tilemap for western text in ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
 
-## From the first bank to 4MB, junk data
+## From bank #01 to bank #7F, junk data
 
 Next (after bank 0) is probably data from another project that was stored on the flash chip at some point (chip may have been recycled and not fully erased when flashed). It contains SD and FAT system error codes, a list of Atari 2600 games and some chunks of their roms. From offset 0x0111D00 to 0x0400000 it then contains only 0xFF but I think this is still part of the junk data. Nothing salty at first glance. This probably easily explains why the checksum is bad as it must be calculated without all that crap. 
 
-## From 4MB to 8MB, the game roms and maybe some surprises
+## From bank #80 to bank #FF, the game roms and maybe some surprises
 
-Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting except for the last two. There is however a trick somewhere: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). 
+Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting except for the last two. There is however a trick somewhere: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long or 11 banks (the rom is followed by 0x00 until TENCHIWOKURAU). 
 
-As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used as save area.
+As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used for save slots.
 
 The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges.
 
