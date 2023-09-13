@@ -133,9 +133,9 @@ Next (after bank 0) is probably data from another project that was stored on the
 
 ## From 4MB to 8MB, the game roms and maybe some surprises
 
-Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offsets multiple of their own size. There is however a trick somewhere: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). 
+Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting except for the last two. There is however a trick somewhere: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). 
 
-As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used as save slot.
+As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used as save area.
 
 The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges.
 
