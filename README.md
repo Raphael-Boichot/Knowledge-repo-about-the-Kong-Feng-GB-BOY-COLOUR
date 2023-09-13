@@ -110,11 +110,13 @@ The first part of the 8MB rom is a giant 4MB partition with mainly junk data. Th
 
 - 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is clearly a copy/paste from another game.
 - 0x000151 - 0x004000: nothing but 0x00, codes jumps directly to 0x004001.
-- 0x004001 - 0x004684: internal code
+- 0x004001 - 0x00444F: internal code.
+- 0x004450 - 0x00450B: array of starting banks for the "188" games.
+- 0x00450C - 0x004684: unknown data.
 - 0x004685 - 0x00492E: tileset for ASCII table, probably 1 bpp partial ASCII table compressed into 2 bpp tiles so it's very hard to visualize with a tile editor as 4 characters are overlapping in each tile. Only uppercase letters, numbers and some extra characters are possible (basically characters 0x20 to 0x5F of the ASCII table).
 - 0x00492F - 0x00582F: tilemap for ASCII table, which appears in [plain ASCII](Dump/HITEK_MULTI.txt) and of course in the same order as the starting bank array of the corresponding rom.
-- 0x005830 - 0x006708: tilemap for Chinese characters to display
-- 0x006708 - 0x008000: tileset for Chinese characters 
+- 0x005830 - 0x006708: tilemap for Chinese characters to display.
+- 0x006708 - 0x008000: tileset for Chinese characters.
 
 ## Array of starting bank for roms in the same order as the games name in menu
 ![starting banks](Pictures/Bank_array.png)
