@@ -101,11 +101,11 @@ The global rom organisation is the following (by increasing offset or increasing
 | TESSERAE         | 0x008000 | 0x690000|D2|
 | WORLD BOWLING    | 0x008000 | 0x698000|D3|
 | DAEDALIAN OPUS   | 0x008000 | 0x6A0000|D4|
-| **Junk data**   | **0x058000** | **0x6A8001**|-|
+| **Unknown data**   | **0x058000** | **0x6A8001**|-|
 | TENCHIWOKURAU    | 0x080000 | 0x700000|E0|
 | DONKEY KONG      | 0x080000 | 0x780000|F0|
 
-The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite primitive: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
+The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite simple to grasp: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
 
 ## HITEK_MULTI rom analysis
 
@@ -131,13 +131,15 @@ The better (according to Chinese players taste) roms are intentionnaly placed on
 
 Next (after bank 0) is probably data from another project that was stored on the flash chip at some point (chip may have been recycled and not fully erased when flashed). It contains SD and FAT system error codes, a list of Atari 2600 games and some chunks of their roms. From offset 0x0111D00 to 0x0400000 it then contains only 0xFF but I think this is still part of the junk data. Nothing salty at first glance. This probably easily explains why the checksum is bad as it must be calculated without all that crap. 
 
-## From 4MB to 8MB, the game roms
+## From 4MB to 8MB, the game roms and maybe some surprises
 
-Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offsets multiple of their own size. There is however a bug in the process: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). I do not know the purpose of this (apart from fixing alignement issue for the next game) as the space could have been occupied by 11 other 32 KB games instead of being blank, the number of entries of the menu being largely sufficient. The 4MB upper part of the rom could indeed theoretically handle 128x32 KB games. Overall, more than half the chip capacity is just filled with junk rather than with roms.
+Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offsets multiple of their own size. There is however a trick somewhere: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). 
 
-The absence of rom sorting by size, the checksum error, the flash chip size error, the quantity of junk data on the flash chip as well as the need to use sloppy alignement technique seems to point towards a rushed job or a tinkering starting from another unspecified reproduction cartridge (for example an earlier 2MB multigame). The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges.
+As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used as save slot.
 
-With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a better custom rom without much difficulty.
+The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges.
+
+With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a working custom rom by tinkering this one without too much difficulty.
 
 ## The most unique and janky cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
