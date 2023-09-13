@@ -30,7 +30,7 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
 Sadly, the current FlashGBX version does not allow to flash this chip (it is not referenced in the database), only to read it. 
-The global rom organisation is the following (by increasing offset):
+The global rom organisation is the following (by increasing offset or increasing banks of 32 kB):
 
 | Data (rom or junk):                  | Size in bytes:          |Starting offset:             |Starting bank:             |
 |----------------------------|-------------------------|-----------------------------|-----------------------------|
