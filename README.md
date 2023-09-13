@@ -25,6 +25,7 @@ At this point, it is quite "easy" to directly wire the desoldered internal rom t
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
 
 ## Rom deep analysis
+
 The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom indicates that it is driven by a MBC5 compatible mapper which is plausible. Anyway, the dump can be made with FlashGBX and a GBXCart entering the following parameters (do not mind the checksum error, the dump will be good): 
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
@@ -126,7 +127,11 @@ The better (according to Chinese players taste) roms are intentionnaly placed on
 ## Tilemap for western text in ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
 
+## From the first bank to 4MB, junk data
+
 Next (after bank 0) is probably data from another project that was stored on the flash chip at some point (chip may have been recycled and not fully erased when flashed). It contains SD and FAT system error codes, a list of Atari 2600 games and some chunks of their roms. From offset 0x0111D00 to 0x0400000 it then contains only 0xFF but I think this is still part of the junk data. Nothing salty at first glance. This probably easily explains why the checksum is bad as it must be calculated without all that crap. 
+
+## From 4MB to 8MB, the game roms
 
 Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting. The rom structure is quite usual compared to the other 1XX in one or the GB SMART 32M multirom, where roms are placed at offsets multiple of their own size. There is however a bug in the process: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long (the rom is followed by 0x00 until TENCHIWOKURAU). I do not know the purpose of this (apart from fixing alignement issue for the next game) as the space could have been occupied by 11 other 32 KB games instead of being blank, the number of entries of the menu being largely sufficient. The 4MB upper part of the rom could indeed theoretically handle 128x32 KB games. Overall, more than half the chip capacity is just filled with junk rather than with roms.
 
