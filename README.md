@@ -24,7 +24,7 @@ At this point, it is quite "easy" to directly wire the desoldered internal rom t
 ## Playing the 188 in 1 cartridge on legit Game Boy Color
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
 
-## Rom deep analysis
+## Whole rom analysis
 
 The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom indicates that it is driven by a MBC5 compatible mapper which is plausible. Anyway, the dump can be made with FlashGBX and a GBXCart entering the following parameters (do not mind the checksum error, the dump will be good): 
 
@@ -109,15 +109,15 @@ The first part of the 8MB rom is a giant 4MB partition with mainly junk data. Th
 
 ## HITEK_MULTI rom analysis
 
-- 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is clearly a copy/paste from another game.
+- 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is clearly a copy/paste from another game. However no documented game has this checksum...
 - 0x000151 - 0x004000: nothing but 0x00, codes jumps directly to 0x004001.
 - 0x004001 - 0x00444F: internal code.
 - 0x004450 - 0x00450B: array of starting banks for the "188" games.
 - 0x00450C - 0x004684: unknown data.
 - 0x004685 - 0x00492E: tileset for ASCII table, probably 1 bpp partial ASCII table compressed into 2 bpp tiles so it's very hard to visualize with a tile editor as 4 characters are overlapping in each tile. Only uppercase letters, numbers and some extra characters are possible (basically characters 0x20 to 0x5F of the ASCII table).
-- 0x00492F - 0x00582F: tilemap for ASCII table, which appears in [plain ASCII](Dump/HITEK_MULTI.txt) and of course in the same order as the starting bank array of the corresponding rom.
-- 0x005830 - 0x006708: tilemap for Chinese characters to display.
-- 0x006708 - 0x008000: tileset for Chinese characters.
+- 0x00492F - 0x00582F: tilemap for ASCII table, which appears in [plain ASCII](Dump/HITEK_MULTI.txt) and of course in the same order as the starting bank array of the corresponding rom. Each game has a 20 characters (tiles) reserved space.
+- 0x005830 - 0x006708: tilemap for Chinese characters corresponding to each game in the same order. Each game has a 20 characters reserved space too (not sure of the encoding as it occupies 2 lines so 40 tiles on screen, a character targeting 2 vertical tiles).
+- 0x006709 - 0x008000: tileset for Chinese characters.
 
 ## Array of starting bank for roms in the same order as the games name in menu
 ![starting banks](Pictures/Bank_array.png)
