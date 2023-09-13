@@ -109,10 +109,12 @@ The first part of the 8MB rom is a giant 4MB partition with mainly junk data. Th
 ## Array of starting bank for roms in the same order as the roms in the menu
 ![starting banks](Pictures/Bank_array.png)
 
+The better (bigger or more famous according to programmer's taste) roms are intentionnaly placed on the first menu page.
+
 ## Tilemap for western text in ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
 
-From offset 0x004930 to 0x00582F it contains the tilemap of western text that must be displayed onscreen (which appears in plain ASCII, very practical, and of course [in the same order](Dump/HITEK_MULTI.txt) as the starting bank array). Offset 0x005830 to 0x006708 is probably the tilemap for Chinese characters to display. Tileset for Chinese characters then follows until the end of the 32 kB. I'm however not 100% sure where the tileset for ASCII characters is (but probably just before the ASCII tilemap). I think it's compressed in 1 bpp and very hard to visualize with a tile editor.
+From offset 0x004930 to 0x00582F it contains the tilemap of western text that must be displayed onscreen (which appears in [plain ASCII](Dump/HITEK_MULTI.txt), very practical, and of course in the same order as the starting bank array of the corresponding rom). Offset 0x005830 to 0x006708 is probably the tilemap for Chinese characters to display. Tileset for Chinese characters then follows until the end of the 32 kB. I'm however not 100% sure where the tileset for ASCII characters is (but probably just before the ASCII tilemap). I think it's compressed in 1 bpp and very hard to visualize with a tile editor.
 
 Next (after bank 0) is probably data from another project that was stored on the flash chip at some point (chip may have been recycled and not fully erased when flashed). It contains SD and FAT system error codes, a list of Atari 2600 games and some chunks of their roms. From offset 0x0111D00 to 0x0400000 it then contains only 0xFF but I think this is still part of the junk data. Nothing salty at first glance. This probably easily explains why the checksum is bad as it must be calculated without all that crap. 
 
