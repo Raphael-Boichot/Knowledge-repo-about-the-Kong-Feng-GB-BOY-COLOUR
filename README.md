@@ -104,15 +104,15 @@ The global rom organisation is the following (by increasing offset or increasing
 | TENCHIWOKURAU    | 0x080000 | 0x700000|E0|
 | DONKEY KONG      | 0x080000 | 0x780000|F0|
 
-The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite primitive: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting from adress 0x000000, so it's basically the starting offsets of the roms / 2^15).
+The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite primitive: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
 
-## Array of starting bank for roms in the same order as the [roms in the menu](Dump/HITEK_MULTI.txt)
+## Array of starting bank for roms in the same order as the roms in the menu
 ![starting banks](Pictures/Bank_array.png)
 
 ## Tilemap for western text in ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
 
-From offset 0x004930 to 0x00582F it contains the tilemap of western text that must be displayed onscreen (which appears in ASCII, practical, and of course in the same order as the starting bank array). Offset 0x005830 to 0x006708 is probably the tilemap for Chinese characters to display. Tileset for Chinese characters then follows until the end of the 32 kB. I'm however not sure where the tileset for ASCII characters is.
+From offset 0x004930 to 0x00582F it contains the tilemap of western text that must be displayed onscreen (which appears in plain ASCII, very practical, and of course [in the same order](Dump/HITEK_MULTI.txt) as the starting bank array). Offset 0x005830 to 0x006708 is probably the tilemap for Chinese characters to display. Tileset for Chinese characters then follows until the end of the 32 kB. I'm however not sure where the tileset for ASCII characters is.
 
 Next (after bank 0) is probably data from another project that was stored on the flash chip at some point (chip may have been recycled and not fully erased when flashed). It contains SD and FAT system error codes, a list of Atari 2600 games and some chunks of their roms. From offset 0x0111D00 to 0x0400000 it then contains only 0xFF but I think this is still part of the junk data. Nothing salty at first glance. This probably easily explains why the checksum is bad as it must be calculated without all that crap. 
 
