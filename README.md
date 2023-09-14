@@ -133,11 +133,9 @@ Next (after bank 0) is probably data from another project that was stored on the
 
 ## From bank #80 to bank #FF, the game roms and maybe some surprises
 
-Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting except for the last two. There is however a trick somewhere: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long or 11 banks (the rom is followed by 0x00 until TENCHIWOKURAU). 
+Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting except for the last two. Roms are just aligned to offsets multiple of their own size which is mandatory for multigame systems knowing how the dedicated mappers deals with them (they basically redirect any in-game call to an address to the rom offset OR the address called). There is however maybe something unusual: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long or 11 banks (the rom is followed by 0x00 until TENCHIWOKURAU). As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used to write saves (but it would be quite tricky to programm I think). I did not investigate much, this is maybe just a sloppy alignement trick and the said two games are maybe just self-flashing rom hacks that do not require ram or extra flash space to save.
 
-As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used for save slots.
-
-The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges.
+The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not found any documented matching.
 
 With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a working custom rom by tinkering this one without too much difficulty.
 
