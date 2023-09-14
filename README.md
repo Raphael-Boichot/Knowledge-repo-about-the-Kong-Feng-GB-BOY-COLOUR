@@ -24,7 +24,7 @@ At this point, it is quite "easy" to directly wire the desoldered internal rom t
 ## Playing the 188 in 1 cartridge on legit Game Boy Color
 ![the GB Boy Colour pinout](Pictures/Trust_in_pinout.png)
 
-## Whole rom analysis
+## Whole rom analysis (total: 256 banks available)
 
 The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014F) and the chip size flag is bad too (offset 0x000148 reports 0x06 for 2MB while it should be 0x08 for 8MB) in the header. The rom indicates that it is driven by a MBC5 compatible mapper which is plausible. Anyway, the dump can be made with FlashGBX and a GBXCart entering the following parameters (do not mind the checksum error, the dump will be good): 
 
@@ -109,20 +109,20 @@ The first part of the 8MB rom is a giant 4MB partition with mainly junk data. Th
 
 ## HITEK_MULTI rom analysis, bank #00
 
-- 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is clearly a copy/paste from another game. However no documented game has this checksum...
-- 0x000151 - 0x004000: nothing but 0x00, codes jumps directly to 0x004001.
+- 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is maybe a copy/paste from another game. However no documented game has this checksum...
+- 0x000151 - 0x004000: nothing but 0x00, codes jumps directly to 0x004001 (no idea why).
 - 0x004001 - 0x00444F: internal code.
 - 0x004450 - 0x00450B: array of starting banks for the "188" games.
 - 0x00450C - 0x004684: unknown data.
-- 0x004685 - 0x00492E: tileset for ASCII table, probably 1 bpp partial ASCII table compressed into 2 bpp tiles so it's very hard to visualize with a tile editor as 4 characters are overlapping in each tile. Only uppercase letters, numbers and some extra characters are possible (basically characters 0x20 to 0x5F of the ASCII table).
+- 0x004685 - 0x00492E: tileset for ASCII table, probably 1 bpp partial ASCII table compressed into 2 bpp tiles so it's very hard to visualize with a tile editor as 2 characters are overlapping in each tile. Only uppercase letters, numbers and some extra characters are possible (basically characters 0x20 to 0x5F of the ASCII table).
 - 0x00492F - 0x00582F: tilemap for ASCII table, which appears in [plain ASCII](Dump/HITEK_MULTI.txt) and of course in the same order as the starting bank array of the corresponding rom. Each game has a 20 characters (tiles) reserved space.
 - 0x005830 - 0x006708: tilemap for Chinese characters corresponding to each game in the same order. Each game has a 20 characters reserved space too (not sure of the encoding as it occupies 2 lines so 40 tiles on screen, a character targeting 2 vertical tiles).
-- 0x006709 - 0x008000: tileset for Chinese characters.
+- 0x006709 - 0x008000: tileset for Chinese characters, probably also 1 bpp compressed in 2 bpp tiles.
 
 ## Array of starting banks for roms in the same order as the games in menu
 ![starting banks](Pictures/Bank_array.png)
 
-The better (according to Chinese players taste) roms are intentionnaly placed on the first menu page. Quite a good selection I must admit.
+The better (according to Chinese players taste) roms are intentionnaly placed on the first and second menu pages. Quite a decent selection I must admit.
 
 ## Tilemap for text in plain ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
@@ -131,11 +131,13 @@ The better (according to Chinese players taste) roms are intentionnaly placed on
 
 Next (after bank 0) is probably data from another project that was stored on the flash chip at some point (chip may have been recycled and not fully erased when flashed). It contains SD and FAT system error codes, a list of Atari 2600 games and some chunks of their roms. From offset 0x0111D00 to 0x0400000 it then contains only 0xFF but I think this is still part of the junk data. Nothing salty at first glance. This probably easily explains why the checksum is bad as it must be calculated without all that crap. 
 
-## From bank #80 to bank #FF, the game roms and maybe some surprises
+## From bank #80 to bank #FF, the game roms
 
 Next 4 MB (second half) is occupied by 66 unique roms, without any particular sorting except for the last two. Roms are just aligned to offsets multiple of their own size which is mandatory for multigame systems knowing how the dedicated mappers deals with them (they basically redirect any in-game call to an address to the rom offset OR the address called). There is however maybe something unusual: DAEDALIAN OPUS is supposed to be a 32 KB rom but its "slot" is in fact 393 KB long or 11 banks (the rom is followed by 0x00 until TENCHIWOKURAU). As both DONKEY KONG (MBC1 + save ram) and TENCHIWOKURAU (MBC2) have save capabilities, this area may be used to write saves (but it would be quite tricky to programm I think). I did not investigate much, this is maybe just a sloppy alignement trick and the said two games are maybe just self-flashing rom hacks that do not require ram or extra flash space to save.
 
-The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not found any documented matching.
+I do not know if banks #01 to #7F can be used for storing roms but there is clearly no reason that it shouldn't. The Game entries for 188 games can all be stuffed with different names (at least ASCII ones) and the array of starting banks too.
+
+The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not found any documented matching chip for the moment.
 
 With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a working custom rom by tinkering this one without too much difficulty.
 
