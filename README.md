@@ -126,8 +126,10 @@ The first part of the 8MB rom is a giant 4MB partition with mainly junk data. Th
 
 The better (according to Chinese players taste) roms are intentionnaly placed on the first and second menu pages. Quite a decent selection I must admit.
 
-## Tilemap for text in plain ASCII
+## Tilemap for menu text in plain ASCII
 ![text_tilemap](Pictures/Text_tilemap.png)
+
+This tilemap can be opened directly in a text editor. It is not natively formatted of course.
 
 ## From bank #01 to bank #7F, junk data
 
