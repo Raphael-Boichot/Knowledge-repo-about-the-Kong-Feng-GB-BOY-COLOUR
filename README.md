@@ -18,7 +18,7 @@ The front board with the internal rom desoldered is rather empty and lot of room
 
 Side note, the flash chip (29LV640) is rated for 3.3V only and is directly wired to the +5V of the GB Boy Colour. It ran on my side for dozens of hours, but how many more will it survive ? Mystery...
 
-## Detail of the internal rom pinout (flash chip is a 8MB MX29LV640EBTI)
+## Detail of the internal rom pinout (flash chip is a 8MB [MX29LV640ETTI-70G](Documentation/MX29LV640E.PDF))
 ![the GB Boy Colour pinout](Pictures/Pinout_2.png)
 
 At this point, it is quite "easy" to directly wire the desoldered internal rom to any spare Game Boy cartridge PCB (CS and A15 included). I used a Divastarz PCB for the job, it [died without suffering](https://github.com/Raphael-Boichot/Game-Boy-chips-decapping-project#game-boy-mbc5-mappers) when giving its MBC to Science in a prior project. Wiring all that shit manually pin by pin was a painfull task but at least it works !
