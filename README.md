@@ -109,7 +109,7 @@ The global rom organisation is the following (by increasing offset or increasing
 
 The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite simple to grasp: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
 
-## HITEK_MULTI rom analysis, bank #00
+## Bank #00, the HITEK_MULTI boot rom
 
 - 0x000000 - 0x000150: Game Boy starting code (Game Boy logo, MBC type, rom size, checksum, etc.). The information section provided indicates a non-Japanese 2 MB unlicensed GBC exclusive game with MBC5 + 128 kB ram + battery with a bad checksum. This part is maybe a copy/paste from another game. However no documented game has this checksum...
 - 0x000151 - 0x004000: nothing but 0x00, codes jumps directly to 0x004001 (no idea why).
@@ -139,7 +139,7 @@ Next 4 MB (second half) is occupied by 66 unique roms, without any particular so
 
 I do not know if banks #01 to #7F can be used for storing roms but there is clearly no reason that it shouldn't. The Game entries for 188 games can all be stuffed with different names (at least ASCII ones) and the array of starting banks too.
 
-The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not found any documented matching chip for the moment.
+The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not find any documented matching chip used in bootlegs for the moment. It's probably an Altera CPLD.
 
 With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a working custom rom by tinkering this one without too much difficulty. 
 
