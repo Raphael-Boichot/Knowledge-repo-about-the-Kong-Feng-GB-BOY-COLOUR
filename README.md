@@ -1,3 +1,5 @@
+**Note: this archive is no longer maintained since Januray 2024. Enjoy it as it is !**
+
 # Knowledge repository about the Kong Feng GB BOY COLOUR
 
 The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the Kong Feng Company (KF). The model follows the GB Boy, a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available documentation and the origin of the KF main processor is not documented (reverse engineering or just leak of the masks, who knows...).
