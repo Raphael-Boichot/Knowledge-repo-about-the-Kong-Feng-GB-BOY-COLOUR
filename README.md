@@ -143,6 +143,8 @@ I do not know if banks #01 to #7F can be used for storing roms but there is clea
 
 The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not find any documented matching chip used in bootlegs for the moment. It's probably an Altera CPLD.
 
+I did not find any emulator that can boot this rom (even the trusty BGB, which supports many oddities), which means it's a bootleg thing not derived from documented stuff.
+
 With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a working custom rom by tinkering this one without too much difficulty. 
 
 ## The most unique and janky cartmod ever
