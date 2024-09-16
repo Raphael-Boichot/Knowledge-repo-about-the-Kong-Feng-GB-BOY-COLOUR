@@ -32,8 +32,7 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
-Sadly, the current FlashGBX version does not allow to flash this chip back (it is not referenced in the database), only to read it. 
-The global rom organisation is the following (by increasing offset or increasing banks of 32 kB):
+Sadly, the current FlashGBX version does not allow to flash this chip back, only to read it (with a GBxCart 1.3 at least). This PCB is not referenced in the FlashGBX database and the author never answered my request to include it. I've tried many different tricks (like shorting some solder bridges left on the PCB) but it never worked. Anyway, The global rom organisation is the following (by increasing offset or increasing banks of 32 kB):
 
 | Data (rom or junk):                  | Size in bytes:          |Starting offset:             |Starting bank:             |
 |----------------------------|-------------------------|-----------------------------|-----------------------------|
@@ -143,9 +142,9 @@ I do not know if banks #01 to #7F can be used for storing roms but there is clea
 
 The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.jpg) by [John McMaster](https://twitter.com/johndmcmaster)) is maybe common with some other 1XX-in-one clone cartridges but I did not find any documented matching chip used in bootlegs for the moment. It's probably an Altera CPLD.
 
-I did not find any emulator that can boot this rom (even the trusty BGB, which supports many oddities), which means it's a bootleg thing not derived from documented stuff.
+I did not find any emulator that can boot this rom (even the trusty BGB, which supports many oddities), which means it's a bootleg thing not derived from known and documented stuff.
 
-With all this knowledge in hand and a way of reflashing this PCB (which I'm still searching), it is probably possible to make a working custom rom by tinkering this one without too much difficulty. 
+With all this knowledge in hand and a way of reflashing this PCB (maybe one day), it is probably possible to make a working custom rom by tinkering this one without too much difficulty.
 
 ## The most unique and janky cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
