@@ -32,7 +32,9 @@ The rom is quite badly made so the checksum is incorrect (range 0x00014E-0x00014
 
 ![FlashGBX parameters](Pictures/FlashGBX_parameters.png)
 
-Sadly, the current FlashGBX version does not allow to flash this chip back, only to read it (with a GBxCart 1.3 at least). This PCB is not referenced in the FlashGBX database and the author never answered my request to include it. I've tried many different tricks (like shorting some solder bridges left on the PCB) but it never worked. Anyway, The global rom organisation is the following (by increasing offset or increasing banks of 32 kB):
+Sadly, the current FlashGBX version does not allow to flash this chip back, only to read it (with a GBxCart 1.3 at least). This mapper/chip combination was not referenced in the FlashGBX database at the time I did the tests despite the chip was used by some previous bootlegs. I've tried many different tricks (like shorting some solder bridges left on the PCB) but it never worked. Maybe the flash chip is simply not meant to be reflashable by the side connectors but only with an external chip flasher and soldered after.
+
+Anyway, The global rom organisation is the following (by increasing offset or increasing banks of 32 kB):
 
 | Data (rom or junk):                  | Size in bytes:          |Starting offset:             |Starting bank:             |
 |----------------------------|-------------------------|-----------------------------|-----------------------------|
@@ -106,7 +108,7 @@ Sadly, the current FlashGBX version does not allow to flash this chip back, only
 | TENCHIWOKURAU    | 0x080000 | 0x700000|E0|
 | DONKEY KONG      | 0x080000 | 0x780000|F0|
 
-The first part of the 8MB rom is a giant 4MB partition with mainly junk data. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite simple to grasp: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
+The first part of the 8MB rom is a giant 4MB partition with mainly junk data except on bank 0x00. The GB Boy boot rom itself (HITEK_MULTI) contains the "filesystem" and a library of tiles for dealing with the western and Chinese characters displayed on screen and is limited to the first 32 KB of data only. The "filesytem" itself is quite simple to grasp: from offset 0x004450 to 0x00450B it contains an array with the "188" starting bank numbers of the "188" targeted roms (starting at 0x000000 for bank 0x00, 0x008000 for bank 0x01, 0x010000 for bank 0x02, etc.).
 
 ## Bank #00, the HITEK_MULTI boot rom
 
