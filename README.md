@@ -146,7 +146,7 @@ The mapper ([Decapped and imaged](Pictures/kong-feng_gbck003_mcmaster_mz_mit20x.
 
 I did not find any emulator that can boot this rom (even the trusty BGB, which supports many oddities), which means it's a bootleg thing not derived from known and documented stuff.
 
-With all this knowledge in hand and a way of reflashing this PCB (maybe one day), it is probably possible to make a working custom rom by tinkering this one without too much difficulty.
+With all this knowledge in hand and a way of reflashing this PCB (probably by desoldering the flash chip or adding some wires between connector and chip), it is probably possible to make a working custom rom by tinkering this one without too much difficulty. I guess it would be easier to solder back a knonw-to-be-reflashable 108-in-1 cartridge with some adapter PCB rather than trying to mess with that piece of crap. There is plenty of room below the LCD screen.
 
 ## The most unique and janky cartmod ever
 ![cleanest cartmod](Pictures/Clean_mod.jpg)
