@@ -32,7 +32,7 @@ The GB Boy Colour comes with the GBA version of the serial port (only version st
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_back.jpg)
 
-Shells are, sadly, not compatible (by far).
+Shells are, sadly, not compatible (by far). The GB Boy Colour shell side is more adapted to adult hands than the GBC thanks to its increased size.
 
 GB and GBC regular cartridges are all compatible with the device. Flash cartridges are more or less, essentially due the very weak 5V power board (the EZ-Flash jr for example boots with difficulty and crashes when reading the SD card due to current draw). The size of the cartridge slot is also a bit off. Re-inserting and wobbling the cartridge is sometimes necessary to boot a game correctly. But it's generally fine for the price it was sold initially (around 30€ shipped from China in 2019). The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of much better screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. It is reported that the sound has issues but I think the only reason is that the speaker does not mix the stereo signals. It sounds legit for a casual player at least.
 
