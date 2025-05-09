@@ -7,11 +7,11 @@ The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts m
 
 ![](/Pictures/Box_content_2.jpg)
 
-The sloppy translation is a a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly.
+The sloppy translation is a a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is honestly solid. It does the job of protecting the device during shipping. 
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
 
-The packaging is honestly solid. It does the job of protecting the device during shipping. START and SELECT buttons are solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour !
+START and SELECT buttons are solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour !
 
 ## User manual
 ![](/Documentation/Flyer_GB_Boy_Colour_3.png)
