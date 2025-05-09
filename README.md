@@ -11,7 +11,7 @@ The sloppy translation is a a compulsory stylistic exercise with Chinese product
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
 
-START and SELECT buttons are solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour !
+START and SELECT buttons are solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour. On the other hand, the directional pad with rounded edges is painfull to use on long gaming sessions but is responsive enough.
 
 ## User manual
 ![](/Documentation/Flyer_GB_Boy_Colour_3.png)
