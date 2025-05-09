@@ -9,18 +9,18 @@ Any attempt to find relevant informations about the "KONG FENG INDUSTRIAL CO. LT
 
 ![](/Pictures/Box_content_2.jpg)
 
-The sloppy translation is a a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is surprisingly solid. It does the job of protecting the device during shipping. 
+The sloppy translation is a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is surprisingly rigid. It does the job of protecting the device during shipping.
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
 
-START and SELECT buttons are solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour. On the other hand, the directional pad with rounded edges is painfull to use on long gaming sessions but is responsive enough.
+START and SELECT buttons are both solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour. On the other hand, the directional pad with rounded edges is painfull to use on long gaming sessions but is responsive too.
 
 ## User manual
 ![](/Documentation/Flyer_GB_Boy_Colour_3.png)
 
 ![](/Documentation/Flyer_GB_Boy_Colour_4.png)
 
-The GB Boy Colour user manual refers to accessories which are not Genuine Nintendo products (but similar like serial cables, adapters and headphones) so I guess these were available on the local Chinese market only. I never saw them on Aliexpress for example.
+The GB Boy Colour user manual refers to accessories which are labelled like buy not Genuine Nintendo products (but similar like serial cables, adapters and headphones) so I guess these were available on the local Chinese market only. I never saw them on Aliexpress for example.
 
 ## User feedback
 The GB Boy Colour features a quite deceptive LCD display in today's standard. It has a very pronounced blue hue, a quite dim backlight and a butchered and stretched upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard](https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/)) and the GB Boy Colour itself is a 100% compatible GBC-like console. 
@@ -28,26 +28,28 @@ The GB Boy Colour features a quite deceptive LCD display in today's standard. It
 ## Modded GBC vs GB Boy Colour: note the butchered aspect ratio and the blue hue
 ![](/Pictures/GB_Boy_Colour_vs_GBC_front.jpg)
 
-The modded GBC used in comparison is equipped with a quite dim transflective LCD (must be a AIO TFT Display if I remind well). So the GB Boy Colour LCD display is dim and very blue shifted.
+The modded GBC used in comparison is equipped with a quite dim transflective LCD (must be an early AIO TFT Display from Aliexpress if I remind well). So the GB Boy Colour LCD display is dim and very blue shifted.
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_side.jpg)
 
-The GB Boy Colour comes with the GBA version of the serial port (only version still available on the market) but is of course only compatible with GB/GBC cables. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED wired). I guess that restoring this function must be quite easy.
+The GB Boy Colour comes with the GBA version of the serial port (only version still available on the market) but is of course only compatible with GB/GBC cables. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED wired). I guess that restoring this function must be quite easy as the main chip is pinout compatible with a GBC.
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_back.jpg)
 
-Shells are, sadly, not compatible (by far). The GB Boy Colour shell is more adapted to adult hands than the GBC thanks to its bigger size.
+Shells are, sadly, not compatible (by far). The GB Boy Colour shell is however more adapted to adult hands than the GBC thanks to its bigger size.
 
-GB and GBC regular cartridges are all compatible with the device. Flash cartridges are more or less, essentially due the very weak 5V power board (the EZ-Flash jr for example boots with difficulty and crashes when reading the SD card due to current draw). The size of the cartridge slot is also a bit off. Re-inserting and wobbling the cartridge is sometimes necessary to boot a game correctly. But it's generally fine for the price it was sold initially (around 30€ shipped from China in 2019). The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of much better screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. It is reported that the sound has issues but I think the only reason is that the speaker does not mix the stereo signals. It sounds legit for a casual player at least.
+GB and GBC regular cartridges are all compatible with the device. Flash cartridges are more or less, essentially due the very weak 5V power board (the EZ-Flash jr. for example boots with difficulty and crashes when reading the SD card due to current draw). The size of the cartridge slot is also a bit off. Re-inserting and wobbling the cartridge is sometimes necessary to boot a game correctly. But it's generally fine for the price it was sold initially (around 30€ shipped from China in 2019). The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of much better screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. It is reported that the sound has issues but I think the only reason is that the speaker does not mix the stereo signals. It sounds legit for a casual player at least.
 
-Overall, the console is perfect for kids and avoid ruining collectible artifacts when playing outside.
+Overall, the console is perfect for kids and to avoid ruining collectible artifacts when playing outside.
 
 The console comes with a 188-in-one internal rom, labelled GBCK003. It contains in real only 66 different games with repeated entries in the menu. All games are arcade classics of the early Game Boy library, mostly MBC1 and games without mapper (plus there is at least one MBC2 and one MBC5 game), mostly Japanese versions. Two games have save features but they are just broken. 
 
-The PCB is directly soldered to the motherboard (PCB against PCB) and is quite difficult to remove. The GB Boy and the GB Boy Colour seems to share the exact same internal rom. The internal rom is activated only when no cartridge is inserted thanks to a small mechanical switch. In case a cartridge is inserted, it pulls high the A15 and CS lines of the rom board, deactivating it.
+The rom sub-PCB is directly soldered to the motherboard (PCB against PCB) and is quite difficult to remove. The GB Boy and the GB Boy Colour seems to share the exact same internal rom. The internal rom is activated only when no cartridge is inserted thanks to a small mechanical switch. In case a cartridge is inserted, it pulls high the A15 and CS lines of the rom board, deactivating it.
 
 ## The main board showing the switch circuit for activating/deactivating the internal rom
 ![the GB Boy Colour Board](Pictures/Board.png)
+
+The switch to detect the cartridge and the internal rom sub-PCB are desoldered on these picture.
 
 The front board with the internal rom desoldered is rather empty and lot of room is left behind the display. The display itself is also quite difficult to remove due to very tight tolerance on the ribbon. I did not find the reference despite markings on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
 
