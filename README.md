@@ -28,7 +28,7 @@ The GB Boy Colour features a quite deceptive LCD display in today's standard. It
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_side.jpg)
 
-The GB Boy Colour comes with the GBA version of the serial port (only version still available on the market) but is of course only compatible with GB/GBC cables. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED wired). I guess that restoring this function must be be easy.
+The GB Boy Colour comes with the GBA version of the serial port (only version still available on the market) but is of course only compatible with GB/GBC cables. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED wired). I guess that restoring this function must be quite easy.
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_back.jpg)
 
