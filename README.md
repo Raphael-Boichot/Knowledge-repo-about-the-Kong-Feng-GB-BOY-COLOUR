@@ -1,6 +1,6 @@
 # Knowledge repository about the Kong Feng GB BOY COLOUR
 
-The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the [Kong Feng Company](http://furrtek.free.fr/?a=aliname) (KF). The model follows the [GB Boy](http://furrtek.free.fr/?a=gbboy), a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available documentation and the origin of the KF main processor is not documented (reverse engineering or just leak of the masks, who knows...).
+The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the [Kong Feng Company](http://furrtek.free.fr/?a=aliname) (KF). The model follows the [GB Boy](http://furrtek.free.fr/?a=gbboy), a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available story and the origin of the KF main processor is not documented (reverse engineering or just leak of the masks, who knows...).
 
 ## Packaging as received from Aliexpress (2019)
 ![](/Pictures/Box_content_1.jpg)
@@ -9,10 +9,14 @@ The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts m
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
 
+The packaging is honestly solid. It does the job of protecting the device during shipping. START and SELECT buttons are solid and responsive, not like the mushy buttons of the genuine GBC. Good point for the GB Boy Colour !
+
 ## User manual
 ![](/Documentation/Flyer_GB_Boy_Colour_3.png)
 
 ![](/Documentation/Flyer_GB_Boy_Colour_4.png)
+
+The GB Boy Colour user manual never refers to the "Colour", so I guess this is very similar to the GB Boy manual. 
 
 ## User feedback
 The GB Boy Colour features a quite deceptive display in today's standard. It has a pronounced blue hue, a quite dim backlight and a butchered and stretched upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard](https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/)) and the GB Boy Colour itself is a 100% compatible GBC-like console. 
