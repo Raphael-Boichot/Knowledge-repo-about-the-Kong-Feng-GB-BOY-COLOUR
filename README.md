@@ -2,12 +2,17 @@
 
 The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the [Kong Feng Company](http://furrtek.free.fr/?a=aliname) (KF). The model follows the [GB Boy](http://furrtek.free.fr/?a=gbboy), a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available documentation and the origin of the KF main processor is not documented (reverse engineering or just leak of the masks, who knows...).
 
-## Modded GBC vs GB Boy Colour: note the butchered aspect ratio and the blue hue
+## Packaging from Aliexpress (2019)
 ![](/Pictures/Box_content_1.jpg)
 
 ![](/Pictures/Box_content_2.jpg)
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
+
+## User manual
+![](/Documentation/Flyer_GB_Boy_Colour_3.png)
+
+![](/Documentation/Flyer_GB_Boy_Colour_4.png)
 
 The GB Boy Colour features a quite deceptive display in today's standard. It has a pronounced blue hue, a quite dim backlight and a butchered and stretched upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard](https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/)) and the GB Boy Colour itself is a 100% compatible GBC-like console. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED wired). GB and GBC regular cartridges are all compatible with the device. Flash cartridges are more or less, essentially due the weak 5V power board (the EZ-Flash jr boots with difficulty due to current draw). The size of the cartridge slot is also a bit off. Re-inserting and wobbling the cartridge is sometimes necessary to boot a game correctly. But it's generally fine for the price it was sold initially (around 30€ shipped from China in 2019). The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of much better screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. START and SELECT are solid and responsive, not like the mushy buttons of the genuine GBC. It is reported that the sound has issues but I think the only reason is that the speaker does not mix the stereo signals. It sounds legit for a casual player at least.
 
