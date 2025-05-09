@@ -5,7 +5,7 @@ The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts m
 ## Packaging as received from Aliexpress (2019)
 ![](/Pictures/Box_content_1.jpg)
 
-Any attempt to find relevant informations about the "KONG FENG INDUSTRIAL CO. LTF,." was of course a fail.
+Any attempt to find relevant informations about the "KONG FENG INDUSTRIAL CO. LTD,." was of course a fail.
 
 ![](/Pictures/Box_content_2.jpg)
 
