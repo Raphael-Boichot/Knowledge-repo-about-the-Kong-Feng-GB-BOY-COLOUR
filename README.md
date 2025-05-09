@@ -16,21 +16,23 @@ The packaging is honestly solid. It does the job of protecting the device during
 
 ![](/Documentation/Flyer_GB_Boy_Colour_4.png)
 
-The GB Boy Colour user manual never refers to the "Colour", so I guess this is very similar to the GB Boy manual. 
+The GB Boy Colour user manual refers to accessories which are not Genuine Nintendo products (but similar like serial cables, adapters and headphones) so I guess these were available on the local Chinese market only. I never saw them on Aliexpress for example.
 
 ## User feedback
-The GB Boy Colour features a quite deceptive display in today's standard. It has a pronounced blue hue, a quite dim backlight and a butchered and stretched upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard](https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/)) and the GB Boy Colour itself is a 100% compatible GBC-like console. 
+The GB Boy Colour features a quite deceptive LCD display in today's standard. It has a very pronounced blue hue, a quite dim backlight and a butchered and stretched upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard](https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/)) and the GB Boy Colour itself is a 100% compatible GBC-like console. 
 
 ## Modded GBC vs GB Boy Colour: note the butchered aspect ratio and the blue hue
 ![](/Pictures/GB_Boy_Colour_vs_GBC_front.jpg)
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_side.jpg)
 
-The GB Boy Colour comes with the GBA version of the serial port (only version still available on the market) but is of course only compatible with GB/GBC cables. GB printer and serial functions are perfectly working.
+The GB Boy Colour comes with the GBA version of the serial port (only version still available on the market) but is of course only compatible with GB/GBC cables. GB printer and serial functions are perfectly working. IR fonctions are however not connected (there is simply no IR LED wired). I guess that restoring this function must be be easy.
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_back.jpg)
 
-IR fonctions are however not connected (there is simply no IR LED wired). GB and GBC regular cartridges are all compatible with the device. Flash cartridges are more or less, essentially due the weak 5V power board (the EZ-Flash jr boots with difficulty due to current draw). The size of the cartridge slot is also a bit off. Re-inserting and wobbling the cartridge is sometimes necessary to boot a game correctly. But it's generally fine for the price it was sold initially (around 30€ shipped from China in 2019). The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of much better screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. START and SELECT are solid and responsive, not like the mushy buttons of the genuine GBC. It is reported that the sound has issues but I think the only reason is that the speaker does not mix the stereo signals. It sounds legit for a casual player at least.
+GB and GBC regular cartridges are all compatible with the device. Flash cartridges are more or less, essentially due the very weak 5V power board (the EZ-Flash jr for example boots with difficulty and crashes when reading the SD card due to current draw). The size of the cartridge slot is also a bit off. Re-inserting and wobbling the cartridge is sometimes necessary to boot a game correctly. But it's generally fine for the price it was sold initially (around 30€ shipped from China in 2019). The console is overall better than a non modded GBC regarding ergonomy and was a very appreciable clone before the massive introduction of much better screen mods. Pads and buttons do not feel as cheap as the ones delivered with GBC replacement shells and do the job honestly. It is reported that the sound has issues but I think the only reason is that the speaker does not mix the stereo signals. It sounds legit for a casual player at least.
+
+Overall, the console is perfect for kids and avoid ruining collectible artifacts when playing outside.
 
 The console comes with a 188-in-one internal rom, labelled GBCK003. It contains in real only 66 different games with repeated entries in the menu. All games are arcade classics of the early Game Boy library, mostly MBC1 and games without mapper (plus there is at least one MBC2 and one MBC5 game), mostly Japanese versions. Two games have save features but they are just broken. 
 
