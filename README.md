@@ -49,7 +49,7 @@ The rom sub-PCB is directly soldered to the motherboard (PCB against PCB) and is
 ## The main board showing the switch circuit for activating/deactivating the internal rom
 ![the GB Boy Colour Board](Pictures/Board.png)
 
-The switch to detect the cartridge and the internal rom sub-PCB are desoldered on these picture.
+The switch to detect the cartridge and the internal rom sub-PCB are desoldered on these pictures.
 
 The front board with the internal rom desoldered is rather empty and lot of room is left behind the display. The display itself is also quite difficult to remove due to very tight tolerance on the ribbon. I did not find the reference despite markings on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
 
