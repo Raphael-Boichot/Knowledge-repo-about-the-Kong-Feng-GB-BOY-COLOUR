@@ -2,6 +2,8 @@
 
 The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the [Kong Feng Company](http://www.furrtek.org/?a=aliname) (KF). The model follows the [GB Boy](https://www.furrtek.org/?a=gbboy), a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available story and the origin of the KF main processor is not documented (reverse engineering or just leak of the masks, who knows...).
 
+Number of units produced is of course unknown but Chinese market is so huge that it could easily be order of magnitude more than genuine GBC.
+
 ## Packaging as received from Aliexpress (2019)
 ![](/Pictures/Box_content_1.jpg)
 
@@ -9,7 +11,7 @@ Any attempt to find relevant informations about the "KONG FENG INDUSTRIAL CO. LT
 
 ![](/Pictures/Box_content_2.jpg)
 
-The sloppy translation is a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is surprisingly rigid. It does the job of protecting the device during shipping.
+The sloppy translation is a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is surprisingly rigid. It does the job of protecting the device during worldwide shipping.
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
 
@@ -29,6 +31,8 @@ The GB Boy Colour features a quite deceptive LCD display in today's standard. It
 ![](/Pictures/GB_Boy_Colour_vs_GBC_front.jpg)
 
 The modded GBC used in comparison is equipped with a quite dim transflective LCD (must be an early AIO TFT Display from Aliexpress if I remind well). So the GB Boy Colour LCD display is dim and very blue shifted. The fact that it is not transflective itself make it barely readable outside despite the backlight. The wrong aspect ratio is very annoying as it is just a nearest pixel upscaling that creates a ton of aliasing. Such a fucked display with everything near perfect aside is a pity.
+
+Console aspect ratio let me think that the GB Boy Colour was built around that very particular display.
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_side.jpg)
 
