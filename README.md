@@ -28,7 +28,7 @@ The GB Boy Colour features a quite deceptive LCD display in today's standard. It
 ## Modded GBC vs GB Boy Colour: note the butchered aspect ratio and the blue hue
 ![](/Pictures/GB_Boy_Colour_vs_GBC_front.jpg)
 
-The modded GBC used in comparison is equipped with a quite dim transflective LCD (must be an early AIO TFT Display from Aliexpress if I remind well). So the GB Boy Colour LCD display is dim and very blue shifted. The wrong aspect ratio is very annoying as it is just a nearest pixel upscaling that creates a ton of aliasing. Such a fucked display with everything near perfect aside is a pity.
+The modded GBC used in comparison is equipped with a quite dim transflective LCD (must be an early AIO TFT Display from Aliexpress if I remind well). So the GB Boy Colour LCD display is dim and very blue shifted. The fact that it is not transflective itself make it barely readable outside despite the backlight. The wrong aspect ratio is very annoying as it is just a nearest pixel upscaling that creates a ton of aliasing. Such a fucked display with everything near perfect aside is a pity.
 
 ![](/Pictures/GB_Boy_Colour_vs_GBC_side.jpg)
 
