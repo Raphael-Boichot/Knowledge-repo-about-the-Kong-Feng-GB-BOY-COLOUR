@@ -22,7 +22,7 @@ START and SELECT buttons are both solid and responsive, not like the mushy butto
 
 ![](/Documentation/Flyer_GB_Boy_Colour_4.png)
 
-The GB Boy Colour user manual refers to accessories which are labelled like buy not Genuine Nintendo products (but similar like serial cables, adapters and headphones) so I guess these were available on the local Chinese market only. I never saw them on Aliexpress for example.
+The GB Boy Colour user manual refers to accessories which are "labelled like" but not genuine Nintendo products (but similar like serial cables, adapters and headphones) so I guess these were available on the local Chinese market only. I never saw them on Aliexpress for example.
 
 ## User feedback
 The GB Boy Colour features a quite deceptive LCD display in today's standard. It has a very pronounced blue hue, a quite dim backlight and a butchered and stretched upscaling. It is driven by an unbranded (and undocumented) video chip turning the legit signal from the main chip into a pixel mess fitting the display. Lover of pixel perfect, move on. Apart from that, the KF main processor is perfectly pinout compatible with a GBC ([it can be directly dropped on a GBC motherboard](https://www.reddit.com/r/Gameboy/comments/qhx2gs/i_swapped_the_cpus_of_a_gb_boy_colour_and_gameboy/)) and the GB Boy Colour itself is a 100% compatible GBC-like console. 
