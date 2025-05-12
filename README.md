@@ -1,8 +1,8 @@
 # Knowledge repository about the Kong Feng GB BOY COLOUR
 
-The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the [Kong Feng Company](http://www.furrtek.org/?a=aliname) (KF). The model follows the [GB Boy](https://www.furrtek.org/?a=gbboy), a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available story and the origin of the KF main processor is not documented (reverse engineering or just leak of the masks, who knows...).
+The GB Boy Colour is a Chinese Game Boy Color (GBC) clone from brand new parts made by the [Kong Feng Company](http://www.furrtek.org/?a=aliname) (KF). The model follows the [GB Boy](https://www.furrtek.org/?a=gbboy), a Game Boy clone. The GB Boy Colour is now apparently discontinued and replaced by a weird GBA form factor clone (that does not play GBA games). The (laughable) consequence is that the GB Boy Colour in the GBC form factor is now more expensive than a legit GBC in 2023. It's been retro faster than the retro. As usual with Chinese repro, there is no available story and the origin of the KF main processor is not documented (pure reverse engineering or just leak of the masks, who knows...).
 
-Number of units produced is of course unknown but Chinese market is so huge that it could easily be order of magnitude more than genuine GBC.
+Some batches sometimes reappear on Aliexpress but never with reliable sellers. It seems that two versions with noticeably different PCB / components were sold. I have the "full shitty electrolytic caps" version. Number of units produced is of course unknown but Chinese market is so humongous that it could easily be order of magnitude more than genuine GBC, knowing that the manufacturing time code for the main processor chip is... 2007.
 
 ## Packaging as received from Aliexpress (2019)
 ![](/Pictures/Box_content_1.jpg)
@@ -55,7 +55,7 @@ The rom sub-PCB is directly soldered to the motherboard (PCB against PCB) and is
 
 The switch to detect the cartridge and the internal rom sub-PCB are desoldered on these pictures.
 
-The front board with the internal rom desoldered is rather empty and lot of room is left behind the display. The display itself is also quite difficult to remove due to very tight tolerance on the ribbon. I did not find the reference despite markings on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
+The front board with the internal rom desoldered is rather empty and lot of room is left behind the display. That would be the perfect place to cram a Game Boy Printer emulator if the 5V was more robust. The display itself is also quite difficult to remove due to very tight tolerance on the ribbon. I did not find the reference despite markings on the ribbon. Next image shows the wiring diagram of the internal rom to the cartridge slot made with a multimeter. The Audio in and Clock pin of Game Boy are of course not connected, reducing the number of pins from 32 to 30.
 
 ## Wiring between the 30 pins internal rom and the 32 pins GB compatible cartridge slot.
 ![the GB Boy Colour pinout](Pictures/Pinout.png)
