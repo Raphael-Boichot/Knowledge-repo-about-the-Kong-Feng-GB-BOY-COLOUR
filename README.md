@@ -11,7 +11,7 @@ Any attempt to find relevant informations about the "KONG FENG INDUSTRIAL CO. LT
 
 ![](/Pictures/Box_content_2.jpg)
 
-The sloppy translation is a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is surprisingly rigid. It does the job of protecting the device during worldwide shipping.
+The sloppy translation is a compulsory stylistic exercise with Chinese products. I can't get enough of Engrish, honestly. The packaging is surprisingly rigid. It perfectly does the job of protecting the device during shipping from Shenzen to the middle of nowhere.
 
 ![](/Pictures/GB_Boy_Colour_front_back.jpg)
 
